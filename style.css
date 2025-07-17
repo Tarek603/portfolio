@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header, nav, section, footer {
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.project {
+  margin: 15px 0;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+input, textarea {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+
+body.dark-mode .project {
+  background: #333;
+}

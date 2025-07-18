@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tarek Aziz | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Tarek Aziz</h1>
-    <p>Graphic Designer | Web Enthusiast</p>
-    <button onclick="toggleTheme()">Switch Theme</button>
+  <header class="hero">
+    <h1 class="hero-title">Tarek Aziz</h1>
+    <p class="hero-subtitle">Graphic Designer & Frontend Developer</p>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
   </header>
 
-  <nav>
+  <nav class="navbar">
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -22,44 +23,51 @@
     </ul>
   </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hi, I'm Tarek Aziz. I’m a passionate Graphic Designer with a strong interest in web design and front-end development. I love turning ideas into visual experiences.</p>
-  </section>
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I am a passionate graphic designer with a strong background in visual storytelling and user-focused design. I also enjoy coding and building web interfaces that are both functional and aesthetically pleasing.</p>
+    </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Adobe Photoshop, Illustrator</li>
-      <li>HTML, CSS, JavaScript</li>
-      <li>UI/UX Design</li>
-    </ul>
-  </section>
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span>Adobe Photoshop</span>
+        <span>Illustrator</span>
+        <span>HTML & CSS</span>
+        <span>JavaScript</span>
+        <span>UI/UX Design</span>
+        <span>Responsive Web Design</span>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Online Resume</h3>
-      <p>A static HTML-based resume website with responsive layout and dark mode toggle.</p>
-    </div>
-    <div class="project">
-      <h3>Traffic Light Simulation</h3>
-      <p>Arduino-based traffic light system using LED and 7-segment displays.</p>
-    </div>
-  </section>
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="card">
+          <h3>Portfolio Website</h3>
+          <p>A clean, responsive personal website showcasing my skills and projects, with light/dark mode toggle.</p>
+        </div>
+        <div class="card">
+          <h3>Arduino Traffic System</h3>
+          <p>A simulated traffic light control system using Arduino, LEDs, and 7-segment displays.</p>
+        </div>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <form onsubmit="return validateForm()">
-      <input type="text" id="name" placeholder="Your Name">
-      <input type="email" id="email" placeholder="Your Email">
-      <textarea id="message" placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <textarea id="message" placeholder="Your message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Tarek Aziz. All rights reserved.</p>
+    <p>&copy; 2025 Tarek Aziz. Designed with ❤️</p>
   </footer>
 
   <script src="script.js"></script>
